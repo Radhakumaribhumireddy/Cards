@@ -1,0 +1,74 @@
+#container {
+  justify-content: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  #cards {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto  ;
+    /* padding:0px 10px; */
+    gap:15px;
+    .card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:10px;
+        padding:10px 10px;
+        border-radius: 5px;
+        border: 0.2px rgba(187, 185, 185, 0.744) solid;
+      .pro {
+        gap: 10px;
+        img {
+          height: 300px;
+          width: 250px;
+          padding: 0px 5px;
+        }
+        .pro_name {
+          font-size: 20px;
+          color: grey;
+          text-align: center;
+        }
+      }
+      .price {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap:10px;
+        .rate {
+          font-size: 25px;
+          font-weight: bold;
+          color: rgb(24, 24, 24);
+        }
+        .off {
+          font-size: 15px;
+          color: grey;
+        }
+      }
+      .delevery{
+        background-color: rgb(243, 234, 234);
+        color: grey;
+        padding:5px 20px;
+        border-radius: 10px;
+      }
+      .rating{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: end;
+        gap:10px;
+        .stars{
+            background-color: green;
+            border-radius: 15px;
+            padding:5px 15px;
+            color: white;
+            font-size: large;
+        }
+        .no{
+            color:grey ;
+        }
+      }
+    }
+  }
+}
